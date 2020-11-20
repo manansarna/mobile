@@ -1,0 +1,22 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+	
+	<ion-toolbar>
+		<ion-icon name="arrow-back-outline" slot="start" (click)="closeModal()" class="social"></ion-icon>
+	</ion-toolbar>
+	<div class="topText" align="center">
+		<h2 style="font-size:35px">Notifications</h2>
+	</div>
+
+	<div *ngFor="let hospitalItem of hospitalItems">
+		<div class="itembaby" *ngIf="checkIfLess(hospitalItem)" lines="none">
+			You're running low on {{returnHospitalItem(hospitalItem)}}
+		</div>
+	</div>
+
+
+</ion-content>

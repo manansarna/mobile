@@ -1,0 +1,7 @@
+{
+  "name": "saddahack",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

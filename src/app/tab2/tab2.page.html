@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+
+	<div class="topText">
+		<h2>Request</h2>
+	</div>
+
+	<div class="cardfam">
+		<h3 class="center labeltext">Explain your problem, and how others can help</h3>
+		<ion-textarea class="textbro" type="text" required placeholder="Problem" [(ngModel)]="problem" name="problem">
+		</ion-textarea>
+
+		<h3 class="sub center labeltext">Description</h3>
+		<ion-textarea class="textbro" type="text" required placeholder="Description" [(ngModel)]="description"
+			name="description">
+		</ion-textarea>
+
+		<div class="flex-center">
+			<button (click)="sendRequest()">Request Help</button>
+		</div>
+
+	</div>
+
+	<div class="cardfam">
+	
+		<div class="flex-center">
+			<button (click)="deleteRequest()">Delete Request</button>
+		</div>
+
+	</div>
+
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="presentModal()">
+		<ion-fab-button color="tertiary">
+			<ion-icon name="notifications"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+</ion-content>

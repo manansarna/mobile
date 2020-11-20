@@ -1,0 +1,151 @@
+ion-toolbar {
+  background: #f6d9d8;
+  border: 1px transparent;
+  border-radius: 25px;
+  margin: 30px;
+}
+ion-content {
+  --background: #feecec;
+}
+.top {
+  margin: 40px;
+  border: 1px transparent;
+  h2 {
+    color: #eb9497;
+    font-family: 'Europa-bold';
+  }
+  ion-item {
+    color: white;
+    border: 1px transparent;
+    border-radius: 25px;
+    --background: #d27578;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  ion-label {
+    margin: auto;
+    text-align: center;
+    font-family: 'Europa-bold';
+  }
+  ion-input {
+    font-family: 'Europa-bold';
+    text-align: center;
+  }
+}
+.topText {
+  background: #f6d9d8;
+  border: 1px transparent;
+  border-radius: 25px;
+  height: 70px;
+  margin: 40px;
+  color: #eb9497;
+  h2 {
+    padding-top: 15px;
+    font-family: 'Europa-bold';
+  }
+}
+.middle {
+  margin: 40px;
+
+  border: 1px transparent;
+  border-radius: 20px;
+  h2 {
+    color: #eb9497;
+    font-family: 'Europa-bold';
+  }
+  ion-item {
+    box-shadow: 5px 5px 26px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px transparent;
+    border-radius: 25px;
+    --background: #d27578;
+    margin-bottom: 20px;
+    font-family: 'Europa-bold';
+  }
+  ion-label {
+    margin: auto;
+    text-align: center;
+    font-family: 'Europa-bold';
+  }
+  ion-input {
+    font-family: 'Europa-bold';
+    text-align: center;
+  }
+}
+ion-card {
+  margin-top: 10px;
+  ion-card-header {
+    --background: #d27578;
+    color: white;
+    font-family: 'Europa-bold';
+  }
+  ion-card-title {
+    color: white;
+    font-family: 'Europa-bold';
+  }
+  ion-card-content {
+    --background: #d27578;
+
+    font-family: 'Europa-bold';
+
+    p {
+      color: #eb9497;
+      font-size: 25px;
+    }
+  }
+}
+ion-button {
+  --background: #d27578;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+}
+
+.fkn {
+  background-color: #d27578;
+  padding: 1em;
+  color: #fff;
+  border-radius: 1em;
+  margin: 1em 0;
+  .labelbro {
+    margin: 0;
+  }
+  input {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    height: 2em;
+    width: 50%;
+  }
+  input.native-input.sc-ion-input-md {
+    padding: 0 !important;
+  }
+}
+
+.native-input.sc-ion-input-md {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
+}
+
+ion-card.accomodation {
+  border-radius: 1em;
+}
+
+ion-progress-bar {
+  --background: #feecec;
+}

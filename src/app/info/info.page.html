@@ -1,0 +1,59 @@
+<ion-content>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" (click)="closeModal()" class="social"></ion-icon>
+  </ion-toolbar>
+  <div class="icon" align="center">
+    <img src="../../assets/photos/med-new.png">
+    <h2>Sahyog.</h2>
+    <h1 style="margin-top: -10px;">Add some details.</h1>
+  </div>
+  <div class="login" align="center">
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+      
+      <ion-input [(ngModel)]="email" name="email" type="text" placeholder="Email" required></ion-input>
+    </ion-item>
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+     
+      <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Password" required></ion-input>
+    </ion-item>
+
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+     
+      <ion-input [(ngModel)]="CPassword" name="CPassword" type="password" placeholder="Confirm Password" required></ion-input>
+    </ion-item>
+  
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+      
+      <ion-input [(ngModel)]="hospitalName" name="hospitalName" type="text" placeholder="Hospital Name" required></ion-input>
+    </ion-item>
+
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+     
+      <ion-input [(ngModel)]="username" name="username" type="text" placeholder="Username" required></ion-input>
+    </ion-item>
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+      
+      <ion-input [(ngModel)]="number" name="number" type="tel" placeholder="Phone" required></ion-input>
+    </ion-item>
+  
+    &nbsp;
+    <ion-item lines="none" align="center" lines="none">
+      
+      <ion-input [(ngModel)]="address" name="address" type="text" placeholder="Address" required></ion-input>
+    </ion-item>
+  </div>
+
+
+  <div class="foot">
+
+    <ion-button (click)="submit()" type="submit" color="light" shape="round"
+      expand="block" style="margin-top: 2em; margin-bottom: 4px;">Submit</ion-button>
+
+  </div>
+</ion-content>

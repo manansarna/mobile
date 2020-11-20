@@ -1,0 +1,102 @@
+<ion-content [fullscreen]="true">
+
+	<div class="topText" align="center">
+		<h2 style="font-size:35px">Dashboard</h2>
+	</div>
+
+
+
+	<div class="top" align="center">
+		<h2>Your Capacity</h2>
+
+
+		<div class="grid">
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="currentCapacity" name=" currentCapacity" required />
+				<p class="labelbro">Current Capacity</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="maxCapacity" name="maxCapacity" required />
+				<p class="labelbro">Max Capacity</p>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="middle" align="center">
+		<h2>Register your items</h2>
+
+		<div class="grid">
+			<div class="fkn">
+				<input type="number" [(ngModel)]="masks" name=" mask" required />
+				<p class="labelbro">Masks</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="gloves" name="gloves" required />
+				<p class="labelbro">Gloves</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="suits" name="suits" required />
+				<p class="labelbro">Suits</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="ventilators" name="ventilators" required />
+				<p class="labelbro">Ventilators</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="oxygenCylinder" name="oxygenCylinder" required />
+				<p class="labelbro">Oxygen Cylinder</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="beds" name="beds" required />
+				<p class="labelbro">Beds</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="drugs" name="drugs" required />
+				<p class="labelbro">Drugs</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="pulseOximeters" name="pulseOximeters" required />
+				<p class="labelbro">Pulse Oximeters</p>
+			</div>
+
+			<div class="fkn">
+				<input type="number" [(ngModel)]="bloodPressureMonitors" name="bloodPressureMonitors" required />
+				<p class="labelbro">Blood Pressure Monitors</p>
+			</div>
+
+		</div>
+
+		<br>
+
+		<ion-card class="accomodation">
+			<ion-card-header>
+				<ion-card-title>Hospital Accomodation</ion-card-title>
+			</ion-card-header>
+			<ion-card-content>
+				<p style="margin-top: 0.5em;">{{currentCapacity}} / {{maxCapacity}}</p>
+				<ion-progress-bar style="border-radius: 1em; margin: 1em 0;" color="tertiary" value="{{currentCapacity/maxCapacity}}"></ion-progress-bar>
+			</ion-card-content>
+		</ion-card>
+		<br><br>
+		<ion-button (click)="updateHospitalData()" type="submit" shape="round" expand="block"
+			style="margin-top: 2.5em; margin-bottom: 4px;">Submit</ion-button>
+		<ion-button (click)="logout()" type="submit" shape="round" expand="block"
+			style="margin-top: 1.5em; margin-bottom: 4px;">Logout</ion-button>
+	</div>
+
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="presentModal()">
+		<ion-fab-button color="tertiary">
+			<ion-icon name="notifications"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+</ion-content>
